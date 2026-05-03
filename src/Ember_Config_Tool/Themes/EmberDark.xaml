@@ -1,0 +1,32 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="AppBackgroundBrush" Color="#111315" />
+    <SolidColorBrush x:Key="ShellBackgroundBrush" Color="#151719" />
+    <SolidColorBrush x:Key="PanelBackgroundBrush" Color="#1D2022" />
+    <SolidColorBrush x:Key="PanelSoftBrush" Color="#23272A" />
+    <SolidColorBrush x:Key="PanelAltBrush" Color="#2A2F32" />
+    <SolidColorBrush x:Key="FieldBrush" Color="#202427" />
+    <SolidColorBrush x:Key="AccentBrush" Color="#D1A44C" />
+    <SolidColorBrush x:Key="AccentHotBrush" Color="#F2BD56" />
+    <SolidColorBrush x:Key="AccentSoftBrush" Color="#5B4826" />
+    <SolidColorBrush x:Key="TextBrush" Color="#F4F1EA" />
+    <SolidColorBrush x:Key="MutedTextBrush" Color="#B7B1A6" />
+    <SolidColorBrush x:Key="SubtleTextBrush" Color="#85827A" />
+    <SolidColorBrush x:Key="WarningBrush" Color="#FFC96F" />
+    <SolidColorBrush x:Key="WarningSoftBrush" Color="#42331E" />
+    <SolidColorBrush x:Key="ErrorBrush" Color="#FF9292" />
+    <SolidColorBrush x:Key="ErrorSoftBrush" Color="#432326" />
+    <SolidColorBrush x:Key="SuccessBrush" Color="#62BEB6" />
+    <SolidColorBrush x:Key="SuccessSoftBrush" Color="#163837" />
+    <SolidColorBrush x:Key="BorderBrush" Color="#3A4145" />
+    <SolidColorBrush x:Key="BorderStrongBrush" Color="#596166" />
+    <SolidColorBrush x:Key="ButtonBrush" Color="#202427" />
+    <SolidColorBrush x:Key="ButtonAltBrush" Color="#2A2F32" />
+    <SolidColorBrush x:Key="FocusRingBrush" Color="#E6BE68" />
+    <SolidColorBrush x:Key="FocusSoftBrush" Color="#2A261F" />
+    <SolidColorBrush x:Key="DisabledTextBrush" Color="#77746D" />
+    <SolidColorBrush x:Key="ScrollBarTrackBrush" Color="#151719" />
+    <SolidColorBrush x:Key="ScrollBarThumbBrush" Color="#3A4145" />
+    <SolidColorBrush x:Key="ScrollBarThumbHoverBrush" Color="#596166" />
+    <SolidColorBrush x:Key="ScrollBarThumbPressedBrush" Color="#D1A44C" />
+</ResourceDictionary>
