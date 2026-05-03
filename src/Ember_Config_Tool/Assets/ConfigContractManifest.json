@@ -1,0 +1,1443 @@
+{
+  "schemaVersion": 1,
+  "scalars": [
+    {
+      "key": "Ambient_Fog_Density",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "BaseSize_MaxMultiplierClamp",
+      "disposition": "internal",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "BaseSize_Multiplier",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_BaseSizeTweaks",
+      "reason": null
+    },
+    {
+      "key": "Blizzard_Opacity",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "BlueprintInjector_BaseBlueprintDebugName",
+      "disposition": "internal",
+      "valueType": "string",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Blueprint internals are below the don't-touch boundary."
+    },
+    {
+      "key": "BlueprintInjector_MasterHologramGuid",
+      "disposition": "internal",
+      "valueType": "string",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Blueprint internals are below the don't-touch boundary."
+    },
+    {
+      "key": "BlueprintInjector_MaxVolume",
+      "disposition": "internal",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "BlueprintInjector_NewDebugName",
+      "disposition": "internal",
+      "valueType": "string",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Blueprint internals are below the don't-touch boundary."
+    },
+    {
+      "key": "BlueprintInjector_NewItemId",
+      "disposition": "internal",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Blueprint internals are below the don't-touch boundary."
+    },
+    {
+      "key": "BlueprintInjector_RevertFillValue",
+      "disposition": "internal",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Blueprint internals are below the don't-touch boundary."
+    },
+    {
+      "key": "BlueprintInjector_RevertSizeX",
+      "disposition": "internal",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Blueprint internals are below the don't-touch boundary."
+    },
+    {
+      "key": "BlueprintInjector_RevertSizeY",
+      "disposition": "internal",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Blueprint internals are below the don't-touch boundary."
+    },
+    {
+      "key": "BlueprintInjector_RevertSizeZ",
+      "disposition": "internal",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Blueprint internals are below the don't-touch boundary."
+    },
+    {
+      "key": "BlueprintInjector_SizeX",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": "Enable_BlueprintInjector",
+      "reason": null
+    },
+    {
+      "key": "BlueprintInjector_SizeY",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": "Enable_BlueprintInjector",
+      "reason": null
+    },
+    {
+      "key": "BlueprintInjector_SizeZ",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": "Enable_BlueprintInjector",
+      "reason": null
+    },
+    {
+      "key": "BlueprintInjector_TemplateGuidPrefix",
+      "disposition": "internal",
+      "valueType": "string",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Blueprint internals are below the don't-touch boundary."
+    },
+    {
+      "key": "BlueprintInjector_VoxelsToMeters",
+      "disposition": "internal",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Blueprint internals are below the don't-touch boundary."
+    },
+    {
+      "key": "Boost_Duration",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_SkillTweaks_Updraft",
+      "reason": null
+    },
+    {
+      "key": "CraftingTweaks_CreativeMode",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": "Enable_CraftingTweaks",
+      "reason": null
+    },
+    {
+      "key": "CraftingTweaks_UnlockAllRecipes",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": "Enable_CraftingTweaks",
+      "reason": null
+    },
+    {
+      "key": "Dangerous_Fog_Barrier_Emissive_Intensity",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "Dangerous_Fog_Barrier_Exposed_Emissive_Intensity",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "Dangerous_Fog_Barrier_Opacity",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "Dangerous_Fog_Barrier_Scatter_Boost",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "Deadly_Fog_Barrier_Emissive_Intensity",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "Deadly_Fog_Barrier_Exposed_Emissive_Intensity",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "Deadly_Fog_Barrier_Opacity",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "Deadly_Fog_Barrier_Scatter_Boost",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "Enable_BaseSizeTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_BlockMaterialReplacer",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_BlueprintInjector",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_BuffReapplication",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_BuildingTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": "Enable_PlacementTweaks",
+      "reason": null
+    },
+    {
+      "key": "Enable_CraftingTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_ExpandedGameSettings",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_FastTravelTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_Fishing_Tweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_FlameAltarTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_FogOfWarTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_FogTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_GemTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_GliderTuning",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_ItemLevelCapSync",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": "Enable_PlayerItemLevelTweaks",
+      "reason": null
+    },
+    {
+      "key": "Enable_LootTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_MagicFactories",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_MagicFurniture",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_NoBarriers",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_NoIntroVideo",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_PlacementTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_PlayerItemLevelTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_ShroudTimerTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_SkillPointsPerLevel",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_SkillTweaks_Updraft",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_SlopeTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_SpellTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_StackSizeTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_TerraformingTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_TerrainDropTweaks",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Enable_VoxelMaterialReplacer",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "fallDamageAngle",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_SlopeTweaks",
+      "reason": null
+    },
+    {
+      "key": "FastTravel_CustomMarker",
+      "disposition": "unsupported",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Current Ember readme marks this setting as not functional."
+    },
+    {
+      "key": "FastTravel_DungeonMarkers",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": "Enable_FastTravelTweaks",
+      "reason": null
+    },
+    {
+      "key": "FastTravel_FlameMarkers",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": "Enable_FastTravelTweaks",
+      "reason": null
+    },
+    {
+      "key": "FastTravel_LocationMarkers",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": "Enable_FastTravelTweaks",
+      "reason": null
+    },
+    {
+      "key": "FastTravel_None",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": "Enable_FastTravelTweaks",
+      "reason": null
+    },
+    {
+      "key": "FlameAltar_MaxMultiplierClamp",
+      "disposition": "internal",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "Fog_Density_MaxClamp",
+      "disposition": "internal",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "Fog_Emissive_MaxClamp",
+      "disposition": "internal",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "Fog_M1_Density",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "Fog_M1_Opacity",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "Fog_Opacity_MaxClamp",
+      "disposition": "internal",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "Fog_Scatter_MaxClamp",
+      "disposition": "internal",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "FogOfWar_MaxRangeClamp",
+      "disposition": "internal",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "FogOfWar_Range",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogOfWarTweaks",
+      "reason": null
+    },
+    {
+      "key": "GemTweaks_Probability_Common",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_GemTweaks",
+      "reason": null
+    },
+    {
+      "key": "GemTweaks_Probability_Epic",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_GemTweaks",
+      "reason": null
+    },
+    {
+      "key": "GemTweaks_Probability_Legendary",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_GemTweaks",
+      "reason": null
+    },
+    {
+      "key": "GemTweaks_Probability_Rare",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_GemTweaks",
+      "reason": null
+    },
+    {
+      "key": "GemTweaks_Probability_Uncommon",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_GemTweaks",
+      "reason": null
+    },
+    {
+      "key": "GemTweaks_SalvageRate",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_GemTweaks",
+      "reason": null
+    },
+    {
+      "key": "GroundRelative_X",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_SkillTweaks_Updraft",
+      "reason": null
+    },
+    {
+      "key": "GroundRelative_Y",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_SkillTweaks_Updraft",
+      "reason": null
+    },
+    {
+      "key": "GroundRelative_Z",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_SkillTweaks_Updraft",
+      "reason": null
+    },
+    {
+      "key": "HeightFog_Density",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "HeightFog_Opacity",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "ItemLevelCap",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": "Enable_PlayerItemLevelTweaks",
+      "reason": null
+    },
+    {
+      "key": "ItemLevelSync_SafetySkip",
+      "disposition": "unsafe",
+      "valueType": "string",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety skip string is not exposed."
+    },
+    {
+      "key": "LOG_LEVEL",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": null
+    },
+    {
+      "key": "Loot_DropMultiplierMaxClamp",
+      "disposition": "internal",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "Loot_ItemDropMultiplier",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_LootTweaks",
+      "reason": null
+    },
+    {
+      "key": "Loot_MaxStackSize",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": "Enable_LootTweaks",
+      "reason": null
+    },
+    {
+      "key": "Loot_MaxStackSizeClamp",
+      "disposition": "internal",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "Loot_ResourceDropMultiplier",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_LootTweaks",
+      "reason": null
+    },
+    {
+      "key": "Max_Angle",
+      "disposition": "internal",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "MaxFlameAltars_Cap",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": "Enable_FlameAltarTweaks",
+      "reason": null
+    },
+    {
+      "key": "MaxFlameAltars_Multiplier",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FlameAltarTweaks",
+      "reason": null
+    },
+    {
+      "key": "PlacementTweaks_BuildInFog",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": "Enable_PlacementTweaks",
+      "reason": null
+    },
+    {
+      "key": "PlacementTweaks_NoBuildZoneNeeded",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": "Enable_PlacementTweaks",
+      "reason": null
+    },
+    {
+      "key": "PlacementTweaks_SafetySkip",
+      "disposition": "unsafe",
+      "valueType": "string",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety skip string is not exposed."
+    },
+    {
+      "key": "PlayerItemLevel_MaxClamp",
+      "disposition": "internal",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "PlayerLevelCap",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": "Enable_PlayerItemLevelTweaks",
+      "reason": null
+    },
+    {
+      "key": "PlayerLevelMax",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": "Enable_PlayerItemLevelTweaks",
+      "reason": null
+    },
+    {
+      "key": "PlayerRelative_X",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_SkillTweaks_Updraft",
+      "reason": null
+    },
+    {
+      "key": "PlayerRelative_Y",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_SkillTweaks_Updraft",
+      "reason": null
+    },
+    {
+      "key": "PlayerRelative_Z",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_SkillTweaks_Updraft",
+      "reason": null
+    },
+    {
+      "key": "Rain_Opacity",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "Shroud_Fog_Dangerous_Density",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "Shroud_Fog_Dangerous_Opacity",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "Shroud_Fog_Deadly_Density",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "Shroud_Fog_Deadly_Opacity",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "ShroudTimer_MaxMultiplierClamp",
+      "disposition": "internal",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "ShroudTimer_Multiplier",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_ShroudTimerTweaks",
+      "reason": null
+    },
+    {
+      "key": "SkillPoints_MaxClamp",
+      "disposition": "internal",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "SkillPointsPerLevel",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": "Enable_SkillPointsPerLevel",
+      "reason": null
+    },
+    {
+      "key": "slidingAngle",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_SlopeTweaks",
+      "reason": null
+    },
+    {
+      "key": "Snow_Opacity",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_FogTweaks",
+      "reason": null
+    },
+    {
+      "key": "SpellCastTime_Multiplier",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_SpellTweaks",
+      "reason": null
+    },
+    {
+      "key": "SpellManaCost_Multiplier",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_SpellTweaks",
+      "reason": null
+    },
+    {
+      "key": "SpellTweaks_MinMultiplier",
+      "disposition": "internal",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": null,
+      "reason": "Safety clamp used as validation only."
+    },
+    {
+      "key": "StackSize_MaxStack",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": false,
+      "masterToggle": "Enable_StackSizeTweaks",
+      "reason": null
+    },
+    {
+      "key": "steepFloorAngle",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_SlopeTweaks",
+      "reason": null
+    },
+    {
+      "key": "TerrainDrop_ExchangeRate",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": false,
+      "masterToggle": "Enable_TerrainDropTweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier1_AdvancedGame",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier1_QuickTimeEvent",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier1_ReduceRoundsBy",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier1_RodEndurance",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier1_RodStrength",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier2_AdvancedGame",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier2_QuickTimeEvent",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier2_ReduceRoundsBy",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier2_RodEndurance",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier2_RodStrength",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier3_AdvancedGame",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier3_QuickTimeEvent",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier3_ReduceRoundsBy",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier3_RodEndurance",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier3_RodStrength",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier4_AdvancedGame",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier4_QuickTimeEvent",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier4_ReduceRoundsBy",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier4_RodEndurance",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier4_RodStrength",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier5_AdvancedGame",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier5_QuickTimeEvent",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier5_ReduceRoundsBy",
+      "disposition": "public",
+      "valueType": "integer",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier5_RodEndurance",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Tier5_RodStrength",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_Fishing_Tweaks",
+      "reason": null
+    },
+    {
+      "key": "Updraft_IgnoreManaCost",
+      "disposition": "public",
+      "valueType": "boolean",
+      "nullable": false,
+      "masterToggle": "Enable_SkillTweaks_Updraft",
+      "reason": null
+    },
+    {
+      "key": "Updraft_ManaCost_Value",
+      "disposition": "public",
+      "valueType": "number",
+      "nullable": true,
+      "masterToggle": "Enable_SkillTweaks_Updraft",
+      "reason": null
+    }
+  ],
+  "tables": [
+    {
+      "key": "BlockMaterialReplacements",
+      "disposition": "public",
+      "writer": "wholeTable",
+      "rowIdentity": "targetGuid",
+      "masterToggle": "Enable_BlockMaterialReplacer",
+      "columns": [
+        {
+          "key": "enabled",
+          "valueType": "boolean",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "materialIndex",
+          "valueType": "integer",
+          "nullable": true,
+          "readOnly": false
+        },
+        {
+          "key": "targetGuid",
+          "valueType": "string",
+          "nullable": false,
+          "readOnly": false
+        }
+      ],
+      "rowShapes": []
+    },
+    {
+      "key": "ExpandedGameSettings_Config",
+      "disposition": "public",
+      "writer": "rowPatchByIdentity",
+      "rowIdentity": "Name",
+      "masterToggle": "Enable_ExpandedGameSettings",
+      "columns": [
+        {
+          "key": "Enabled",
+          "valueType": "boolean",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "Max",
+          "valueType": "number",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "Min",
+          "valueType": "number",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "Steps",
+          "valueType": "integer",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "Type",
+          "valueType": "string",
+          "nullable": false,
+          "readOnly": true
+        },
+        {
+          "key": "Value",
+          "valueType": "boolean",
+          "nullable": false,
+          "readOnly": false
+        }
+      ],
+      "rowShapes": [
+        {
+          "id": "boolean",
+          "typeValue": "Boolean",
+          "requiredFields": [
+            "Value"
+          ],
+          "columns": [
+            "Enabled",
+            "Value"
+          ]
+        },
+        {
+          "id": "range",
+          "typeValue": null,
+          "requiredFields": [
+            "Max",
+            "Min",
+            "Steps"
+          ],
+          "columns": [
+            "Enabled",
+            "Max",
+            "Min",
+            "Steps"
+          ]
+        },
+        {
+          "id": "scalar",
+          "typeValue": "Scalar",
+          "requiredFields": [
+            "Max",
+            "Min",
+            "Steps"
+          ],
+          "columns": [
+            "Enabled",
+            "Max",
+            "Min",
+            "Steps"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "GliderConfig",
+      "disposition": "public",
+      "writer": "nestedField",
+      "rowIdentity": "key",
+      "masterToggle": "Enable_GliderTuning",
+      "columns": [
+        {
+          "key": "accelerationForward",
+          "valueType": "number",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "airResistanceLateral",
+          "valueType": "number",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "airResistanceLongitudinal",
+          "valueType": "number",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "airResistanceVertical",
+          "valueType": "number",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "pitchAngleSpeed",
+          "valueType": "number",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "rollAngleSpeed",
+          "valueType": "number",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "yawAngleSpeed",
+          "valueType": "number",
+          "nullable": false,
+          "readOnly": false
+        }
+      ],
+      "rowShapes": []
+    },
+    {
+      "key": "TerraformingTweaks",
+      "disposition": "public",
+      "writer": "wholeTable",
+      "rowIdentity": "materialId",
+      "masterToggle": "Enable_TerraformingTweaks",
+      "columns": [
+        {
+          "key": "damageSusceptibility",
+          "valueType": "string",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "enabled",
+          "valueType": "boolean",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "hardness",
+          "valueType": "string",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "healthPoints",
+          "valueType": "integer",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "materialId",
+          "valueType": "integer",
+          "nullable": false,
+          "readOnly": false
+        }
+      ],
+      "rowShapes": []
+    },
+    {
+      "key": "VoxelMaterialReplacements",
+      "disposition": "public",
+      "writer": "wholeTable",
+      "rowIdentity": "targetGuid",
+      "masterToggle": "Enable_VoxelMaterialReplacer",
+      "columns": [
+        {
+          "key": "enabled",
+          "valueType": "boolean",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "targetGuid",
+          "valueType": "string",
+          "nullable": false,
+          "readOnly": false
+        },
+        {
+          "key": "toId",
+          "valueType": "integer",
+          "nullable": true,
+          "readOnly": false
+        }
+      ],
+      "rowShapes": []
+    }
+  ]
+}

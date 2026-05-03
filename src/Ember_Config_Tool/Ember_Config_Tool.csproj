@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Ember_Config_Tool</AssemblyName>
+    <RootNamespace>Ember_Config_Tool</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\ConfigUiMetadata.json" LogicalName="Ember_Config_Tool.Assets.ConfigUiMetadata.json" />
+    <EmbeddedResource Include="Assets\ConfigContractManifest.json" LogicalName="Ember_Config_Tool.Assets.ConfigContractManifest.json" />
+    <EmbeddedResource Include="Assets\ConfigSnapshot\**\*" LogicalName="Ember_Config_Tool.Assets.ConfigSnapshot.%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+
+</Project>

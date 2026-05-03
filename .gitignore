@@ -1,0 +1,17 @@
+bin/
+obj/
+artifacts/
+publish/
+logs/
+*.log
+*.tmp
+*.user
+*.suo
+.vs/
+
+local/
+Presets/
+Exports/
+
+**/bin/
+**/obj/
